@@ -1,5 +1,6 @@
 server:
   port: 9091
+  wait-time-in-ms-when-sync-empty: 3000
 
 eureka:
   client:
@@ -8,5 +9,9 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_SERVER_URL}
       
-  server:
-    wait-time-in-ms-when-sync-empty: 3000
+
+spring:
+  boot:
+    admin:
+      client:
+        url: ${MONITORING_SERVER_URL:http://localhost:9080}
