@@ -15,3 +15,11 @@ spring:
     admin:
       client:
         url: ${MONITORING_SERVER_URL:http://localhost:9080}
+        
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+                
