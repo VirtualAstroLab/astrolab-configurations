@@ -26,6 +26,7 @@ management:
         include: "*"
         
 zuul:
-    routes:
-        astrolab:
-            path: /**
+  routes:
+    astrolab:
+      path: /**
+      stripPrefix: false
