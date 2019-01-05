@@ -13,7 +13,7 @@ spring:
 
 eureka:
   client:
-    registerWithEureka: false
+    registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
       defaultZone: ${EUREKA_SERVER_URL}
