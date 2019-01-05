@@ -25,17 +25,17 @@ management:
       exposure:
         include: "*"
         
-zuul:
-  routes:
-    astrolab:
-      path: /**
-      stripPrefix: false
-      
-debug: true
-trace: true
-logging:
-  level:
-    org:
-      springframework:
-        cloud:
-          netflix: trace      
+#zuul:
+#  routes:
+#    astrolab:
+#      path: /**
+#      stripPrefix: false
+#      
+#debug: true
+#trace: true
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        cloud:
+#          netflix: trace
