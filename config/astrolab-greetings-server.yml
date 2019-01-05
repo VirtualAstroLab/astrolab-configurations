@@ -1,0 +1,26 @@
+server:
+  port: 8090
+  wait-time-in-ms-when-sync-empty: 3000
+
+spring:
+  application:
+    name: astrolab-greetings-server
+  boot:
+    admin:
+      client:
+        url: ${MONITORING_SERVER_URL:http://localhost:9080}
+        
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_URL}
+      
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
