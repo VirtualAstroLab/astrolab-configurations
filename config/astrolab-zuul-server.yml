@@ -25,11 +25,11 @@ management:
       exposure:
         include: "*"
         
-#zuul:
-#  routes:
-#    astrolab:
-#      path: /**
-#      stripPrefix: false
+zuul:
+  routes:
+    greeting:
+      path: /**
+      stripPrefix: false
 #      
 #debug: true
 #trace: true
